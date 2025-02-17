@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullstack Developer CV</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="skills.js" defer></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div id="cv" class="relative max-w-4xl mx-auto my-10 p-8 bg-white shadow-lg rounded-xl">
+        <div>
+            <a href="https://github.com/elipapa/markdown-cv" class="github-corner"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+        </div>
+
+        <!-- Header -->
+        <div class="flex flex-col items-center">
+            <div class="w-32 h-32 mb-4 sm:mb-0 sm:w-48 sm:h-48 flex-shrink-0">
+              <img class="w-full h-full object-cover rounded-full" src="WhatsApp Image 2025-02-17 at 13.44.17 (1).jpeg" alt="user avatar" />
+            </div>
+            <div class="flex gap-2">
+                <a href="#"><div class="flex grow-0 align-center justify-center p-1 rounded-[100px] bg-[#36393F] text-white ">
+                    <svg width="18" height="18" viewBox="0 0 28 20"><path fill="currentColor" d="M23.0212 1.67671C21.3107 0.879656 19.5079 0.318797 17.6584 0C17.4062 0.461742 17.1749 0.934541 16.9708 1.4184C15.003 1.12145 12.9974 1.12145 11.0283 1.4184C10.819 0.934541 10.589 0.461744 10.3368 0.00546311C8.48074 0.324393 6.67795 0.885118 4.96746 1.68231C1.56727 6.77853 0.649666 11.7538 1.11108 16.652C3.10102 18.1418 5.3262 19.2743 7.69177 20C8.22338 19.2743 8.69519 18.4993 9.09812 17.691C8.32996 17.3997 7.58522 17.0424 6.87684 16.6135C7.06531 16.4762 7.24726 16.3387 7.42403 16.1847C11.5911 18.1749 16.408 18.1749 20.5763 16.1847C20.7531 16.3332 20.9351 16.4762 21.1171 16.6135C20.41 17.0369 19.6639 17.3997 18.897 17.691C19.3052 18.4993 19.7718 19.2689 20.3021 19.9945C22.6677 19.2689 24.8929 18.1364 26.8828 16.6466H26.8893C27.43 10.9731 25.9665 6.04728 23.0212 1.67671ZM9.68041 13.6383C8.39754 13.6383 7.34085 12.4453 7.34085 10.994C7.34085 9.54272 8.37155 8.34973 9.68041 8.34973C10.9893 8.34973 12.0395 9.54272 12.0187 10.994C12.0187 12.4453 10.9828 13.6383 9.68041 13.6383ZM18.3161 13.6383C17.0332 13.6383 15.9765 12.4453 15.9765 10.994C15.9765 9.54272 17.0124 8.34973 18.3161 8.34973C19.6184 8.34973 20.6751 9.54272 20.6543 10.994C20.6543 12.4453 19.6184 13.6383 18.3161 13.6383Z"></path></svg>
+                  </div></a>
+                <a href="#"><div class="bg-ico" id="facebook"><i class="fab fa-facebook social  facebook fa-lg"></i></div></a>
+                <a href="#"><div class="bg-ico" id="pinterest"><i class="fab fa-pinterest social  pinterest fa-lg"></i></div></a>
+                <a href="#"><div class="bg-ico" id="twitter"><i class="fab fa-twitter social  twitter fa-lg"></i></div></a>
+                <a href="#"><div class="bg-ico" id="instagram"><i class="fab fa-instagram social  instagram fa-lg"></i></div></a>
+                <a href="#"><div class="bg-ico" id="tumblr"><i class="fab fa-tumblr social  tumblr fa-lg"></i></div></a>
+                <a href="#"><div class="bg-ico" id="whatsapp"><i class="fab fa-whatsapp social  whatsapp fa-lg"></i></div></a>
+                <a href="#"><div class="bg-ico" id="youtube"><i class="fab fa-youtube social  youtube fa-lg"></i></div></a>
+                </div>
+          </div>
+        <header class="text-center mb-8">
+            <h1 id="name" class="text-4xl font-bold mb-2"></h1>
+            <p id="title" class="text-lg text-gray-600"></p>
+        </header>
+
+        
+
+        <!-- About -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+            <p id="about" class="text-gray-700"></p>
+        </section>
+
+        <!-- Skills
+       
+        <skills-bar skills='[{"name": "JavaScript", "level": 80}, {"name": "CSS", "level": 70}]'></skills-bar> -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Skills</h2>
+            <ul id="skills" class="grid grid-cols-2 gap-2"></ul>
+        </section>
+
+        <!-- Experience -->
+        <timeline-element id="timeline"></timeline-element>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Experience</h2>
+            <div id="experience"></div>
+        </section>
+        
+
+        <!-- Education -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Education</h2>
+            <div id="education"></div>
+        </section>
+
+        <!-- Contact Me -->
+        <section class="text-center mt-10">
+            <h2 class="text-2xl font-semibold mb-4">Contact Me</h2>
+            <div id="contact" class="flex justify-center space-x-6"></div>
+        </section>
+
+        <!-- Download Button -->
+        <div class="text-center mt-10">
+            <button id="download" class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">Download PDF</button>
+        </div>
+    </div>
+
+    <script>
+
+    const jobs = [
+        {"company": "Gympass", "begin": {"month": "sep", "year": "2019"}, "duration": null, "occupation": "Frontend developer", "description": "I am part of the Corporate team, responsible for the development and maintenance of the employee management platform."},
+        {"company": "Lendico", "begin": {"month": "apr", "year": "2018"}, "duration": null, "occupation": "Frontend developer", "description": "I integrate the Frontend team responsible for developing and maintaining the online lending platform."},
+        {"company": "Anapro", "begin": {"month": "dec", "year": "2016"}, "duration": "1 yr e 5 mos", "occupation": "Fullstack developer", "description": "Development and maintenance of web applications for the real estate market."},
+        {"company": "Anapro", "begin": {"month": "set", "year": "2012"}, "duration": "4 yrs e 3 mos", "occupation": "Support Technician", "description": "Responsible for the implementation and parameterization of the system, training, and customer support."}
+    ];
+
+    const timelineElement = document.getElementById('timeline');
+    timelineElement.setAttribute('jobs', JSON.stringify(jobs)); // Set the jobs attribute
+
+        const content = {
+            "name": "John Doe",
+            "title": "Fullstack Developer",
+            "about": "Passionate fullstack developer with 5+ years of experience building responsive and scalable applications.",
+            "skills": ["JavaScript", "React", "Node.js", "HTML & CSS", "Tailwind CSS", "Docker"],
+            "experience": [
+                {
+                    "role": "Senior Fullstack Developer",
+                    "company": "TechCorp Inc.",
+                    "years": "2020 - Present",
+                    "description": "Developing and maintaining scalable applications with modern JavaScript frameworks."
+                },
+                {
+                    "role": "Frontend Developer",
+                    "company": "Webify Solutions",
+                    "years": "2017 - 2020",
+                    "description": "Built user-friendly interfaces and optimized website performance."
+                }
+            ],
+            "education": [
+                {
+                    "degree": "B.Sc. in Computer Science",
+                    "school": "University of Tech",
+                    "years": "2013 - 2017"
+                }
+            ],
+            "contact": [
+                { "platform": "GitHub", "url": "https://github.com/username" },
+                { "platform": "LinkedIn", "url": "https://linkedin.com/in/username" },
+                { "platform": "Email", "url": "mailto:john@example.com" }
+            ]
+        };
+
+        function populateCV(data) {
+            document.getElementById("name").textContent = data.name;
+            document.getElementById("title").textContent = data.title;
+            document.getElementById("about").textContent = data.about;
+
+            const skillsList = document.getElementById("skills");
+            data.skills.forEach(skill => {
+                const li = document.createElement("li");
+                li.textContent = skill;
+                skillsList.appendChild(li);
+            });
+
+            const expContainer = document.getElementById("experience");
+            data.experience.forEach(exp => {
+                expContainer.innerHTML += `
+                    <div class="mb-4">
+                        <h3 class="text-xl font-semibold">${exp.role}</h3>
+                        <p class="text-gray-600">${exp.company} (${exp.years})</p>
+                        <p>${exp.description}</p>
+                    </div>`;
+            });
+
+            const eduContainer = document.getElementById("education");
+            data.education.forEach(edu => {
+                eduContainer.innerHTML += `
+                    <div class="mb-4">
+                        <h3 class="text-xl font-semibold">${edu.degree}</h3>
+                        <p class="text-gray-600">${edu.school} (${edu.years})</p>
+                    </div>`;
+            });
+
+            const contactContainer = document.getElementById("contact");
+            data.contact.forEach(contact => {
+                contactContainer.innerHTML += `
+                    <a href="${contact.url}" target="_blank" class="text-blue-500 hover:underline">${contact.platform}</a>`;
+            });
+        }
+
+        document.getElementById("download").addEventListener("click", () => {
+            const element = document.getElementById("cv");
+            html2pdf(element);
+        });
+
+        populateCV(content);
+    </script>
+    <script src="skills-component.js"></script>
+    <script src="timeline-component.js"></script>
+</body>
+</html>
