@@ -7,12 +7,13 @@
 //</section>
 
 const skills = [
-    { name: 'HTML', level: 70 },
-    { name: 'CSS', level: 60 },
-    { name: 'JavaScript', level: 50 },
-    { name: 'Node.js', level: 40 },
-    { name: 'React', level: 60 },
-    { name: 'Git', level: 70 },
+    { name: 'Gestão de Progetos (Scrum, Agile, Lean, CCPM', level: 90 },
+    { name: 'Frontend e UX/UI (React, Next, Flutter, PWA)', level: 75 },
+    { name: 'Stacks (MERN, LAMP, Serverless, GraphQL + Apollo )', level: 80 },
+    { name: 'Linguagens de Backend (Node, Php, .Net)', level: 70 },
+    { name: 'Database (CouchDB, Redis, Kafka, Hadoop', level: 60 },
+    { name: 'Versionamento (Git, Bitbucket)', level: 70 },
+    { name: 'Devops (DNS, Deploy, NGINX, APACHE)', level: 70 },
   ];
 
   // Function to render skill bars
@@ -23,16 +24,16 @@ const skills = [
     skills.forEach(skill => {
       const skillDiv = document.createElement('div');
       console.log('skill', skill, container)
-      skillDiv.className = 'skill';
+      skillDiv.className = 'skill px-4';
       skillDiv.innerHTML = `
         <!-- Skill label and percentage -->
         <div class="flex justify-between mb-2">
-          <span class="font-semibold">${skill.name}</span>
+          <span class="font-semibold text-sm">${skill.name}</span>
           <span>${skill.level}%</span>
         </div>
 
         <!-- Skill bar -->
-        <div class="w-full h-3 bg-gray-300 rounded-full overflow-hidden">
+        <div class="w-full h-2 bg-gray-300 rounded-full overflow-hidden">
           <div 
             class="h-full bg-gradient-to-r from-green-400 to-blue-500 skill-level"
             style="width: 0;"
