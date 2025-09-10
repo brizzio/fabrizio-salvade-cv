@@ -1,0 +1,33 @@
+name: Generate CV PDF
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install puppeteer
+
+      - name: Generate PDF using Puppeteer
+        run: node generate-pdf.js
+
+      - name: Commit and push PDF
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/assets/pdf/Fabrizio_Salvade_CV.pdf
+          git commit -m "Atualiza PDF do currículo"
+          git push || echo "Sem alterações para commitar"

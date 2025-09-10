@@ -1,0 +1,37 @@
+# ----------------------------
+# Node.js
+# ----------------------------
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# Puppeteer / Chromium cache
+.puppeteer/
+
+# ----------------------------
+# GitHub Pages / Jekyll
+# ----------------------------
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# PDFs gerados (remova se quiser versionar o PDF)
+docs/assets/pdf/*.pdf
+
+# ----------------------------
+# VSCode
+# ----------------------------
+.vscode/
+
+# ----------------------------
+# Sistema Operacional
+# ----------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# Logs e temporários
+# ----------------------------
+*.log
+*.tmp

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Currículo - Fabrizio Salvade</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background: #f9f9f9;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      color: #1e3a8a;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #1e3a8a;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    a {
+      color: #1e3a8a;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .experience, .education, .skills, .projects, .languages {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .job, .edu, .project {
+      padding-left: 15px;
+      border-left: 3px solid #1e3a8a;
+    }
+
+    .job h3, .edu h3, .project h3 {
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 3px;
+    }
+
+    .job span, .edu span, .project span {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .skills-list, .languages-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .skill, .language {
+      flex: 1 1 45%;
+      margin-bottom: 10px;
+    }
+
+    .bar-container {
+      background: #e0e0e0;
+      border-radius: 5px;
+      overflow: hidden;
+      height: 10px;
+      margin-top: 5px;
+    }
+
+    .bar {
+      height: 10px;
+      background: #1e3a8a;
+    }
+
+    .projects table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 5px;
+    }
+
+    .projects th, .projects td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    .projects th {
+      background-color: #f0f0f0;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+      .container {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Fabrizio Salvade</h1>
+    <div class="contact">
+      Gerente de Projetos | Desenvolvedor Full Stack<br>
+      São Paulo, Brasil | +55 11 9498-55614 | <a href="mailto:fabrizio.salvade@gmail.com">fabrizio.salvade@gmail.com</a><br>
+      <a href="https://github.com/brizzio">GitHub</a> | <a href="https://www.linkedin.com/in/fabrizio-salvade-1aa63913">LinkedIn</a>
+    </div>
+
+    <div class="section">
+      <h2>Resumo Profissional</h2>
+      <p>Engenheiro de Software e Gerente de Projetos com +20 anos de experiência em desenvolvimento full stack, arquitetura web e liderança de equipes. Especialista em sistemas corporativos escaláveis, integração de APIs e bancos de dados, e gestão de projetos complexos em varejo, saúde, construção e financeiro. Criador de sistemas líderes de mercado como <strong>Prixsia</strong> e <strong>Marel POS</strong>. Experiência com metodologias ágeis, planejamento estratégico e comunicação com stakeholders.</p>
+    </div>
+
+    <div class="section experience">
+      <h2>Experiência Profissional</h2>
+
+      <div class="job">
+        <h3>Marel SRL – Roma, Itália | 2021 – Atual</h3>
+        <span>Engenheiro de Software & Gerente de Projetos</span>
+        <p>Sistema de frente de caixa para supermercados e varejo. Planejamento de recursos, cronogramas e comunicação com stakeholders.</p>
+      </div>
+
+      <div class="job">
+        <h3>NewOne Consultoria – São Paulo, Brasil | 2018 – 2021</h3>
+        <span>Engenheiro de Software & Gerente de Projetos</span>
+        <p>Criador do <strong>Prixsia</strong>, sistema líder de preços para indústrias e supermercados. Planejamento estratégico e alocação de recursos.</p>
+      </div>
+
+      <div class="job">
+        <h3>Yandeh S.A. – São Paulo, Brasil | 2014 – 2017</h3>
+        <span>Gerente de Projetos</span>
+        <p>Desenvolvimento de portal de e-commerce e coordenação de equipe remota de 200+ colaboradores.</p>
+      </div>
+
+      <div class="job">
+        <h3>Baumgart Participações S/A – São Paulo, Brasil | 2012 – 2014</h3>
+        <span>Desenvolvedor Java (Spring)</span>
+        <p>Sistema de gestão para 240 representantes comerciais.</p>
+      </div>
+
+      <div class="job">
+        <h3>AMD Anestesia – São Paulo, Brasil | 2007 – 2011</h3>
+        <span>Desenvolvedor Full Stack</span>
+        <p>Sistema de faturamento hospitalar integrado a seguradoras e relatórios fiscais.</p>
+      </div>
+    </div>
+
+    <div class="section projects">
+      <h2>Projetos de Destaque</h2>
+      <table>
+        <tr>
+          <th>Projeto</th>
+          <th>Função</th>
+          <th>Tecnologias</th>
+          <th>Resultado</th>
+        </tr>
+        <tr>
+          <td>Prixsia</td>
+          <td>Criador & Dev</td>
+          <td>PHP, JS, React, SQL</td>
+          <td>Sistema líder de preços em indústrias e supermercados</td>
+        </tr>
+        <tr>
+          <td>Marel POS</td>
+          <td>Criador & Dev</td>
+          <td>Node.js, React, SQL</td>
+          <td>Sistema de frente de caixa escalável para varejo</td>
+        </tr>
+        <tr>
+          <td>Portal E-commerce Yandeh</td>
+          <td>Gerente de Projetos</td>
+          <td>Java, Spring, JS</td>
+          <td>Coordenação de 200 colaboradores remotos</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section education">
+      <h2>Formação Acadêmica</h2>
+      <div class="edu">
+        <h3>MBA Executivo em Marketing – ESPM, Brasil (2007)</h3>
+        <h3>Mestre em Teoria da Comunicação – USP, Brasil (2011)</h3>
+        <h3>Desenvolvimento Java – Caelum, Brasil (2013)</h3>
+        <h3>Licenciatura em Ciências da Comunicação – FAAP, Brasil (2000)</h3>
+      </div>
+    </div>
+
+    <div class="section skills">
+      <h2>Habilidades Técnicas</h2>
+      <div class="skills-list">
+        <div class="skill">
+          <strong>Linguagens / Frameworks</strong>
+          <div class="bar-container"><div class="bar" style="width:95%"></div></div>
+          HTML, CSS, JS (React, Next.js, Node.js, jQuery), PHP, Ruby, Python, Java (Spring), SQL, Flask
+        </div>
+        <div class="skill">
+          <strong>Ferramentas</strong>
+          <div class="bar-container"><div class="bar" style="width:90%"></div></div>
+          Git/GitHub, NPM, REST/HTTP, Armazenamento de dados, Analytics
+        </div>
+        <div class="skill">
+          <strong>Gestão</strong>
+          <div class="bar-container"><div class="bar" style="width:85%"></div></div>
+          Planejamento de projetos, liderança de equipes, metodologias ágeis, comunicação com stakeholders
+        </div>
+      </div>
+    </div>
+
+    <div class="section languages">
+      <h2>Idiomas</h2>
+      <div class="languages-list">
+        <div class="language">
+          <strong>Português</strong> - C2
+          <div class="bar-container"><div class="bar" style="width:100%"></div></div>
+        </div>
+        <div class="language">
+          <strong>Inglês</strong> - B2/C1
+          <div class="bar-container"><div class="bar" style="width:70%"></div></div>
+        </div>
+        <div class="language">
+          <strong>Italiano</strong> - Nativo
+          <div class="bar-container"><div class="bar" style="width:100%"></div></div>
+        </div>
+        <div class="language">
+          <strong>Alemão</strong> - A1/A2
+          <div class="bar-container"><div class="bar" style="width:20%"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Competências Complementares</h2>
+      <ul>
+        <li>Liderança de equipes multifuncionais (10+ pessoas atualmente)</li>
+        <li>Resolução de problemas complexos e tomada de decisão sob pressão</li>
+        <li>Aprendizado rápido de novas tecnologias e frameworks</li>
+        <li>Comunicação clara e storytelling técnico</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
