@@ -7,14 +7,14 @@
 //</section>
 
 const skills = [
-    { name: 'Gestão de Progetos (Scrum, Agile, Lean, CCPM', level: 90 },
-    { name: 'Frontend e UX/UI (React, Next, Flutter, PWA)', level: 75 },
-    { name: 'Stacks (MERN, LAMP, Serverless, GraphQL + Apollo )', level: 80 },
-    { name: 'Linguagens de Backend (Node, Php, .Net)', level: 95 },
-    { name: 'Database (CouchDB, Redis, Kafka, Hadoop)', level: 60 },
-    { name: 'Versionamento (Git, Bitbucket)', level: 90 },
-    { name: 'Devops (DNS, Deploy, NGINX, APACHE)', level: 70 },
-    { name: 'IA (Agents, Tensorflow, Prompt, Redes Neurais)', level: 70 },
+    { name: 'IA (MCP, RAG, LLM, Tensorflow)', level: 80 },
+    { name: 'Gestão de Progetos (Scrum, Agile, Squad)', level: 90 },
+    { name: 'Frontend e UX/UI (HTML5, CSS3, ShadCN, Vite)', level: 75 },
+    { name: 'Stacks (MERN, LAMP, Next.js )', level: 80 },
+    { name: 'Linguagens de Backend (Node, Php)', level: 95 },
+    { name: 'Database (Postgres, Couch/Mongo, Redis)', level: 70 },
+    { name: 'Infra (AWS, GCP, Azure, Vercel, Netlify)', level: 90 },
+    { name: 'Devops (DOCKER, APACHE, Git Actions)', level: 70 },
   ];
 
   // Function to render skill bars
