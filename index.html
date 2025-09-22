@@ -1,87 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fabrizio Salvade CV</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="skills.js" defer></script>
-  </head>
-  <body class="bg-gray-100 text-gray-800">
-    <div
-      id="cv"
-      class="relative max-w-4xl mx-auto my-10 p-8 bg-white shadow-lg rounded-xl"
-    >
-      <div>
-        <a
-          href="https://github.com/brizzio"
-          target="_blank"
-          class="github-corner"
-          ><svg
-            width="80"
-            height="80"
-            viewBox="0 0 250 250"
-            style="
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fabrizio Salvade CV</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="skills.js" defer></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+  <div id="cv" class="relative max-w-4xl mx-auto my-10 p-8 bg-white shadow-lg rounded-xl">
+    <div>
+      <a href="https://github.com/brizzio" target="_blank" class="github-corner"><svg width="80" height="80"
+          viewBox="0 0 250 250" style="
               fill: #151513;
               color: #fff;
               position: absolute;
               top: 0;
               border: 0;
               right: 0;
-            "
-          >
-            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-            <path
-              d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor"
-              style="transform-origin: 130px 106px"
-              class="octo-arm"
-            ></path>
-            <path
-              d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor"
-              class="octo-body"
-            ></path></svg
-        ></a>
-      </div>
+            ">
+          <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+          <path
+            d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+            fill="currentColor" style="transform-origin: 130px 106px" class="octo-arm"></path>
+          <path
+            d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+            fill="currentColor" class="octo-body"></path>
+        </svg></a>
+    </div>
 
-      <!-- Header -->
-      <div class="flex flex-col items-center">
-        <div class="size-24 mb-2 sm:mb-2 sm:size-32 flex-shrink-0">
-          <img
-            class="w-full h-full object-cover rounded-full mb-2"
-            src="WhatsApp Image 2025-02-17 at 13.44.17 (1).jpeg"
-            alt="user avatar"
-          />
-          
-        </div>
-        <div>
-            <p class="text-3xl font-semibold">Fabrizio Salvade</p>
-        </div>
-        <div class="flex gap-2 mt-2">
-          <a href="https://discord.gg/Mj7rUATC" target="_blank">
-            <div
-              class="flex grow-0 align-center justify-center p-1 rounded-[100px] bg-[#36393F] text-white"
-            >
-              <svg width="18" height="18" viewBox="0 0 28 20">
-                <path
-                  fill="currentColor"
-                  d="M23.0212 1.67671C21.3107 0.879656 19.5079 0.318797 17.6584 0C17.4062 0.461742 17.1749 0.934541 16.9708 1.4184C15.003 1.12145 12.9974 1.12145 11.0283 1.4184C10.819 0.934541 10.589 0.461744 10.3368 0.00546311C8.48074 0.324393 6.67795 0.885118 4.96746 1.68231C1.56727 6.77853 0.649666 11.7538 1.11108 16.652C3.10102 18.1418 5.3262 19.2743 7.69177 20C8.22338 19.2743 8.69519 18.4993 9.09812 17.691C8.32996 17.3997 7.58522 17.0424 6.87684 16.6135C7.06531 16.4762 7.24726 16.3387 7.42403 16.1847C11.5911 18.1749 16.408 18.1749 20.5763 16.1847C20.7531 16.3332 20.9351 16.4762 21.1171 16.6135C20.41 17.0369 19.6639 17.3997 18.897 17.691C19.3052 18.4993 19.7718 19.2689 20.3021 19.9945C22.6677 19.2689 24.8929 18.1364 26.8828 16.6466H26.8893C27.43 10.9731 25.9665 6.04728 23.0212 1.67671ZM9.68041 13.6383C8.39754 13.6383 7.34085 12.4453 7.34085 10.994C7.34085 9.54272 8.37155 8.34973 9.68041 8.34973C10.9893 8.34973 12.0395 9.54272 12.0187 10.994C12.0187 12.4453 10.9828 13.6383 9.68041 13.6383ZM18.3161 13.6383C17.0332 13.6383 15.9765 12.4453 15.9765 10.994C15.9765 9.54272 17.0124 8.34973 18.3161 8.34973C19.6184 8.34973 20.6751 9.54272 20.6543 10.994C20.6543 12.4453 19.6184 13.6383 18.3161 13.6383Z"
-                ></path>
-              </svg>
-            </div>
-          </a>
-          <!--  <a href="#"><div class="bg-ico" id="facebook"><i class="fab fa-facebook social  facebook fa-lg"></i></div></a> -->
-          <!-- <a href="#"><div class="bg-ico" id="pinterest"><i class="fab fa-pinterest social  pinterest fa-lg"></i></div></a> -->
-          <!--  <a href="#" target="_blank">
+    <!-- Header -->
+    <div class="flex flex-col items-center">
+      <div class="size-24 mb-2 sm:mb-2 sm:size-32 flex-shrink-0">
+        <img class="w-full h-full object-cover rounded-full mb-2" src="WhatsApp Image 2025-02-17 at 13.44.17 (1).jpeg"
+          alt="user avatar" />
+      </div>
+      <div>
+        <p class="text-3xl font-semibold">Fabrizio Salvade</p>
+      </div>
+      <div class="flex gap-2 mt-2">
+        <a href="https://discord.gg/Mj7rUATC" target="_blank">
+          <div class="flex grow-0 align-center justify-center p-1 rounded-[100px] bg-[#36393F] text-white">
+            <svg width="18" height="18" viewBox="0 0 28 20">
+              <path fill="currentColor"
+                d="M23.0212 1.67671C21.3107 0.879656 19.5079 0.318797 17.6584 0C17.4062 0.461742 17.1749 0.934541 16.9708 1.4184C15.003 1.12145 12.9974 1.12145 11.0283 1.4184C10.819 0.934541 10.589 0.461744 10.3368 0.00546311C8.48074 0.324393 6.67795 0.885118 4.96746 1.68231C1.56727 6.77853 0.649666 11.7538 1.11108 16.652C3.10102 18.1418 5.3262 19.2743 7.69177 20C8.22338 19.2743 8.69519 18.4993 9.09812 17.691C8.32996 17.3997 7.58522 17.0424 6.87684 16.6135C7.06531 16.4762 7.24726 16.3387 7.42403 16.1847C11.5911 18.1749 16.408 18.1749 20.5763 16.1847C20.7531 16.3332 20.9351 16.4762 21.1171 16.6135C20.41 17.0369 19.6639 17.3997 18.897 17.691C19.3052 18.4993 19.7718 19.2689 20.3021 19.9945C22.6677 19.2689 24.8929 18.1364 26.8828 16.6466H26.8893C27.43 10.9731 25.9665 6.04728 23.0212 1.67671ZM9.68041 13.6383C8.39754 13.6383 7.34085 12.4453 7.34085 10.994C7.34085 9.54272 8.37155 8.34973 9.68041 8.34973C10.9893 8.34973 12.0395 9.54272 12.0187 10.994C12.0187 12.4453 10.9828 13.6383 9.68041 13.6383ZM18.3161 13.6383C17.0332 13.6383 15.9765 12.4453 15.9765 10.994C15.9765 9.54272 17.0124 8.34973 18.3161 8.34973C19.6184 8.34973 20.6751 9.54272 20.6543 10.994C20.6543 12.4453 19.6184 13.6383 18.3161 13.6383Z">
+              </path>
+            </svg>
+          </div>
+        </a>
+        <!--  <a href="#"><div class="bg-ico" id="facebook"><i class="fab fa-facebook social  facebook fa-lg"></i></div></a> -->
+        <!-- <a href="#"><div class="bg-ico" id="pinterest"><i class="fab fa-pinterest social  pinterest fa-lg"></i></div></a> -->
+        <!--  <a href="#" target="_blank">
             <div class="bg-ico" id="twitter">
               <i class="fab fa-twitter social twitter fa-lg"></i>
             </div>
@@ -91,383 +66,481 @@
               <i class="fab fa-instagram social instagram fa-lg"></i>
             </div>
           </a> -->
-          <!-- <a href="#"><div class="bg-ico" id="tumblr"><i class="fab fa-tumblr social  tumblr fa-lg"></i></div></a> -->
-          <a
-            href="https://wa.me/+5511949855614?text=Podemos%20falar%20sobre%20teu%20CV?"
-            target="_blank"
-          >
-            <div class="bg-ico" id="whatsapp">
-              <i class="fab fa-whatsapp social whatsapp fa-lg"></i>
-            </div>
-          </a>
-          <!-- <a href="#"><div class="bg-ico" id="youtube"><i class="fab fa-youtube social  youtube fa-lg"></i></div></a> -->
-          <a
-            href="mailto:fabrizio.salvade@gmail.com?subject=Vamos%20conversar&body=Entre%20em%20contato%20comigo"
-            target="_blank"
-          >
-            <div class="bg-ico" id="mail">
-              <i class="fas fa-envelope social mail fa-lg"></i>
-            </div>
-          </a>
+        <!-- <a href="#"><div class="bg-ico" id="tumblr"><i class="fab fa-tumblr social  tumblr fa-lg"></i></div></a> -->
+        <a href="https://wa.me/+5511949855614?text=Podemos%20falar%20sobre%20teu%20CV?" target="_blank">
+          <div class="bg-ico" id="whatsapp">
+            <i class="fab fa-whatsapp social whatsapp fa-lg"></i>
+          </div>
+        </a>
+        <!-- <a href="#"><div class="bg-ico" id="youtube"><i class="fab fa-youtube social  youtube fa-lg"></i></div></a> -->
+        <a href="mailto:fabrizio.salvade@gmail.com?subject=Vamos%20conversar&body=Entre%20em%20contato%20comigo"
+          target="_blank">
+          <div class="bg-ico" id="mail">
+            <i class="fas fa-envelope social mail fa-lg"></i>
+          </div>
+        </a>
 
-          <a
-            href="/docs/FABRIZIO-SALVADE-RESUMEE.pdf"
-            download="fabrizio-salvade-cv.pdf"
-            class="inline-block px-2 py-1 bg-gray-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 focus:outline-none focus:ring-0 active:bg-blue-800 transition duration-150 ease-in-out"
-          >
-            Curriculum Vitae
-          </a>
-        </div>
+        <a href="/docs/FABRIZIO-SALVADE-RESUMEE.pdf" download="fabrizio-salvade-cv.pdf"
+          class="inline-block px-2 py-1 bg-gray-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 focus:outline-none focus:ring-0 active:bg-blue-800 transition duration-150 ease-in-out">
+          Curriculum Vitae
+        </a>
       </div>
-      <header class="text-center mb-8">
-        <h1 id="name" class="text-4xl font-bold mb-2"></h1>
-        <p
-          id="title"
-          class="text-gray-700 text-lg font-medium text-gray-600"
-        ></p>
-      </header>
+    </div>
+    <header class="text-center mb-8">
+      <h1 id="name" class="text-4xl font-bold mb-2"></h1>
+      <p id="title" class="text-gray-700 text-lg font-medium text-gray-600"></p>
+    </header>
 
-      <!-- About -->
-      <section class="mb-8">
-        <h2 class="text-2xl font-semibold mb-4 text-gray-400">{ Manifesto }</h2>
-        <p id="about" class="text-gray-700 text-sm">
-          Sou um engenheiro full-stack com paixão por desenvolver sistemas
-          eficientes, intuitivos e que simplesmente funcionam. Gosto de criar
-          <strong>soluções robustas</strong> que oferecem uma experiência fluida
-          para os usuários, priorizando a qualidade, a performance e a
-          escalabilidade. Tenho sólida vivência em todas as camadas do
-          desenvolvimento, desde o front-end até o back-end, sempre buscando
-          <strong>simplificar processos</strong> complexos. Meu foco é construir
-          aplicações que não apenas atendam às necessidades do negócio, mas que
-          também sejam <strong>fáceis de manter e evoluir</strong>. Acredito que
-          a tecnologia deve trabalhar a favor das pessoas, tornando suas vidas
-          mais simples e produtivas.
-        </p>
-      </section>
+    <!-- About -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4 text-gray-400">{ Manifesto }</h2>
+      <p id="about" class="text-gray">
+        Tenho mais de <strong>20 anos de experiência</strong> como engenheiro
+        de software e gerente de projetos, desenvolvendo sistemas escaláveis e
+        liderando equipes nos setores de varejo, saúde, finanças e construção.
+        Ao longo da minha trajetória, criei soluções inovadoras — incluindo um
+        sistema de precificação baseado em redes neurais que aumentou a margem
+        operacional de empresas de varejo em 3 a 5 pontos percentuais — e
+        conduzi equipes híbridas na entrega de plataformas robustas dentro de
+        prazos desafiadores de 90 a 180 dias. É essa combinação de tecnologia
+        e impacto real nos negócios que me motiva todos os dias. <br />Minha
+        <strong>força</strong> é a combinação de sólidas competências técnicas
+        com liderança de pessoas. Tenho experiência em projetar e programar
+        soluções full stack com React, Node.js, Java e SQL, e também sei
+        gerenciar projetos, alinhar stakeholders e manter equipes motivadas e
+        focadas nos resultados.
+        <br />Atualmente, aplico automação e inteligência artificial — MCP, LSTM, Transformers, RAG e IA generativa — em
+        pipelines que transformam dados complexos em insights acionáveis e decisões estratégicas em tempo real.<br />
+        <strong>Busco</strong> a oportunidade de aplicar minha
+        experiência técnica e de liderança em uma empresa que valorize tanto a
+        inovação quanto as pessoas. Quero colaborar de perto com as equipes,
+        ajudando a transformar desafios em soluções práticas que facilitem o
+        trabalho diário e impulsionem os resultados. Meu objetivo é contribuir
+        para o crescimento não apenas por meio da tecnologia, mas também
+        promovendo um ambiente em que os profissionais se sintam apoiados e
+        motivados a alcançar o <strong>sucesso</strong> de forma duradoura.
+      </p>
+    </section>
 
-      <!-- destaques -->
-      <section class="mb-8">
-        <h2 class="text-2xl font-semibold mb-4 text-gray-400">{ Destaques }</h2>
-        <div class="overflow-x-auto shadow-md rounded-lg">
-          <table
-            class="min-w-full border-collapse text-sm text-left text-gray-700"
-          >
-            <thead
-              class="bg-gray-100 text-gray-900 uppercase text-xs tracking-wider"
-            >
-              <tr>
-                <th class="px-6 py-3">Projeto</th>
-                <th class="px-6 py-3">Função</th>
-                <th class="px-6 py-3">Tecnologias</th>
-                <th class="px-6 py-3">Resultado</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-              <tr class="hover:bg-gray-50">
-                <td class="px-6 py-4 font-medium text-gray-900">Mezzus</td>
-                <td class="px-6 py-4">Criador & Dev</td>
-                <td class="px-6 py-4">React, MCP, RAG</td>
-                <td class="px-6 py-4">
-                  30% de acrescimo no potencial de compras de ativos com o uso de redes neurais
-                </td>
-              </tr>
-              <tr class="hover:bg-gray-50">
-                <td class="px-6 py-4 font-medium text-gray-900">Prixsia</td>
-                <td class="px-6 py-4">Criador & Dev</td>
-                <td class="px-6 py-4">PHP, JS, React, SQL</td>
-                <td class="px-6 py-4">
-                  Sistema líder de preços em indústrias e supermercados
-                </td>
-              </tr>
-              <tr class="hover:bg-gray-50">
-                <td class="px-6 py-4 font-medium text-gray-900">Marel POS</td>
-                <td class="px-6 py-4">Criador & Dev</td>
-                <td class="px-6 py-4">Node.js, React, SQL</td>
-                <td class="px-6 py-4">
-                  Sistema de frente de caixa escalável para varejo
-                </td>
-              </tr>
-              <tr class="hover:bg-gray-50">
-                <td class="px-6 py-4 font-medium text-gray-900">
-                  Portal E-commerce Yandeh
-                </td>
-                <td class="px-6 py-4">Gerente de Projetos</td>
-                <td class="px-6 py-4">Java, Spring, JS</td>
-                <td class="px-6 py-4">
-                  Coordenação de 200 colaboradores remotos
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+    <!-- destaques -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4 text-gray-400">{ Destaques }</h2>
+      <div class="overflow-x-auto shadow-md rounded-lg">
+        <table class="min-w-full border-collapse text-sm text-left text-gray-700">
+          <thead class="bg-gray-100 text-gray-900 uppercase text-xs tracking-wider">
+            <tr>
+              <th class="px-6 py-3">Projeto</th>
+              <th class="px-6 py-3">Função</th>
+              <th class="px-6 py-3">Tecnologias</th>
+              <th class="px-6 py-3">Resultado</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 font-medium text-gray-900">Mezzus</td>
+              <td class="px-6 py-4">Criador & Dev</td>
+              <td class="px-6 py-4">React, MCP, RAG</td>
+              <td class="px-6 py-4">
+                30% de acrescimo no potencial de compras de ativos com o uso
+                de redes neurais
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 font-medium text-gray-900">Prixsia</td>
+              <td class="px-6 py-4">Criador & Dev</td>
+              <td class="px-6 py-4">PHP, JS, React, SQL</td>
+              <td class="px-6 py-4">
+                Sistema líder de mercado para precificação em supermercados e industrias
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 font-medium text-gray-900">Marel POS</td>
+              <td class="px-6 py-4">Criador & Dev</td>
+              <td class="px-6 py-4">Node.js, React, SQL</td>
+              <td class="px-6 py-4">
+                Sistema de frente de caixa agnostico de database e projetado para edge computing, trazendo economia de
+                hardware para a operação de varejo.
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 font-medium text-gray-900">
+                Portal E-commerce Yandeh
+              </td>
+              <td class="px-6 py-4">Gerente de Projetos</td>
+              <td class="px-6 py-4">Java, Spring, JS</td>
+              <td class="px-6 py-4">
+                MVP funcional e execução de testes A/B am 90 dias
 
-      <!-- Skills
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Skills
        
         <skills-bar skills='[{"name": "JavaScript", "level": 80}, {"name": "CSS", "level": 70}]'></skills-bar> -->
-      <section class="mb-8">
-        <h2 class="text-2xl font-semibold mb-4 text-gray-400">
-          { Habilidades Técnicas }
-        </h2>
-        <ul id="skills" class="grid grid-cols-2 gap-0"></ul>
-      </section>
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4 text-gray-400">
+        { Habilidades Técnicas }
+      </h2>
+      <p class="w-[95%] mb-4">
+        Minha trajetória profissional naturalmente me
+        conduziu ao universo da inteligência artificial e da automação, com
+        foco em previsão de séries temporais. <br />Hoje, aplico técnicas avançadas
+        como MCP, LSTM e Transformers para criar modelos preditivos precisos,
+        integrando RAG (Retrieval-Augmented Generation) e IA generativa em
+        pipelines completos que transformam dados complexos em insights
+        acionáveis. Do processamento e limpeza de dados à geração de
+        relatórios dinâmicos e dashboards estratégicos, minhas soluções
+        automatizam processos críticos e orientam decisões em tempo real.<br />
+        Paralelamente, mergulhei no ecossistema de blockchain e finanças
+        descentralizadas (DeFi), desenvolvendo contratos inteligentes com
+        Solidity e construindo aplicações descentralizadas que unem segurança,
+        transparência e inovação. Exploro como IA, automação e análise
+        preditiva podem se integrar a soluções DeFi, criando ferramentas
+        inteligentes que monitoram, prevêem e otimizam operações financeiras
+        de forma autônoma. <br />Essa combinação de habilidades — engenharia de
+        software, liderança, ciência de dados, automação avançada e
+        tecnologias emergentes como IA e blockchain — reflete meu compromisso
+        em transformar conhecimento técnico em valor estratégico. <br />Minha
+        carreira é uma jornada contínua de inovação, sempre voltada a criar
+        soluções que gerem impacto real e mensurável para os negócios.
+      </p>
+      <ul id="skills" class="grid grid-cols-2 gap-0"></ul>
+    </section>
 
-      <!-- Experience -->
+    <!-- Experience -->
 
-      <div class="max-w-6xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Timeline de Atividades -->
-          <div>
-            <h2 class="text-2xl font-semibold mb-6 text-green-600">
-              Experiência
-            </h2>
-            <div
-              id="activitiesTimeline"
-              class="relative border-l-4 border-green-500"
-            ></div>
-          </div>
-
-          <!-- Timeline de Educação -->
-          <div>
-            <h2 class="text-2xl font-semibold mb-6 text-blue-600">Educação</h2>
-            <div
-              id="educationTimeline"
-              class="relative border-l-4 border-blue-500"
-            ></div>
-          </div>
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Timeline de Atividades -->
+        <div>
+          <h2 class="text-2xl font-semibold mb-6 text-green-600">
+            Experiência
+          </h2>
+          <div id="activitiesTimeline" class="relative border-l-4 border-green-500"></div>
         </div>
-      </div>
 
-      <section class="max-w-6xl mx-auto mt-4 p-4 bg-white">
-        <h2 class="text-2xl font-semibold text-gray-400 mb-4">
-          { Softskills }
-        </h2>
-
-        <div id="collapsible-list" class="min-w-full"></div>
-      </section>
-
-      <!-- Download Button -->
-      <div class="text-center mt-10">
-       
+        <!-- Timeline de Educação -->
+        <div>
+          <h2 class="text-2xl font-semibold mb-6 text-blue-600">Educação</h2>
+          <div id="educationTimeline" class="relative border-l-4 border-blue-500"></div>
+        </div>
       </div>
     </div>
 
-    <script>
-      // Dados dinâmicos para Educação
-      const educationData = [
-        {
-          title: "CURSO AVANÇADO DE PROGRAMAÇÃO JAVA",
-          company: "Caelum Escola de Tecnologia - BRASIL",
-          period: "Março 2012 - Dezembro 2013",
-          description:
-            "Kit de Desenvolvimento Java (JDK): Máquina Virtual Java (JVM).Programação orientada a objetos com linguagem Java./nCriação de interfaces gráficas de usuário (GUIs), entrada/saída de arquivos e segmentos e operações de rede./nDesenvolvimento de uma aplicação em Java.",
-        },
-        {
-          title: "MESTRADO EM TEORIA DA COMUNICAÇÃO - ALUMNI CONVIDADO",
-          company:
-            "ESCOLA DE COMUNICAÇÕES E ARTES - UNIVERSIDADE DE SÃO PAULO - BRASIL",
-          period: "Janeiro 2009- Junho 2011",
-          description:
-            "epistemologia da comunicação.Teorias da comunicação, estudo da tele ficção (telenovelas, séries);educomunicação (comunicação e educação)comunicação Organizacional;estudos sobre recepção e consumo;jornalismo digital, teoria do jornalismo e diálogo social;comunicação e trabalho;censura e liberdade de expressão;comunicação e cultura.",
-        },
-        {
-          title: "MBA EXECUTIVO EM MARKETING",
-          company: "Escola Superior de Propaganda e Marketing - ESPM",
-          period: "Janeiro 2004 - Junho 2007",
-          description:
-            "Formação em estratégias de marketing, gestão de marcas, comportamento do consumidor e inteligência de mercado, com foco em tomada de decisões, inovação e comunicação integrada.",
-        },
-        {
-          title: "Pós-Graduação em Economia Empresarial CEAG",
-          company:
-            "FUNDAÇÃO GETULIO VARGAS - ESCOLA DE ADMINISTRAÇÃO DO ESTADO DE SÃO PAULO - FGV/ EAESP",
-          period: "Janeiro 2001 - Dezembro 2003",
-          description:
-            "Formação em economia aplicada aos negócios, com foco em modelos econômicos, gestão estratégica e análise financeira, pela FGV EAESP.",
-        },
-        {
-          title:
-            "Licenciatura em Ciências da Comunicação - Publicidade e Propaganda",
-          company: "FUNDAÇÃO ARMANDO ÁLVARES PENTEADO - FAAP - BRASIL",
-          period: "Janeiro 1996 - Dezembro 2000",
-          description:
-            "analisar ambientes de negócios, comportamento do consumidor, bem como segmentar e posicionar produtos e serviços no mercado.Implementar estratégias de marketing, monitorar e avaliar resultados, respeitando os aspectos éticos e legais e incorporando sempre uma visão criativa e inovadora desde o planejamento da campanha até a criação da peça e definição da mídia.Desenvolver conteúdo para produtores independentes e agências de publicidade.Produção executiva, direitos autorais, leis de incentivo e indústria audiovisual.",
-        },
-      ];
+    <section class="max-w-6xl mx-auto mt-4 p-4 bg-white">
+      <h2 class="text-2xl font-semibold text-gray-400 mb-4">
+        { Softskills }
+      </h2>
 
-      // Dados dinâmicos para Atividades
-      const activitiesData = [
-        {
-          title: "ENGENHEIRO DE SOFTWARE E GERENTE DE PROJETOS",
-          company: "BRBB - Gestora de fundos para o mercado secundario.",
-          period: "Novembro 2024 - Presente",
-          description:
-            "Criador e desenvolvedor de um sistema de precificação para aquisição de cotas de consórcio, além de um sistema de análise baseado em redes neurais para identificar padrões da concorrência, com o objetivo de aumentar a assertividade na participação em leilões de compras de ativos.",
-        },
-        {
-          title: "ENGENHEIRO DE SOFTWARE E GERENTE DE PROJETOS",
-          company: "MAREL SRL Roma - Lacio - Italia",
-          period: "Janeiro 2021 - Março 2023",
-          description:
-            "Criador e desenvolvedor de um sistema de frente de caixa para supermercados e varejo em geral, com responsabilidades de planejar e designar recursos do projeto, preparar orçamentos, monitorar o progresso e manter as partes interessadas sempre informadas..",
-        },
-        {
-          title: "ENGENHEIRO DE SOFTWARE E GERENTE DE PROJETOS",
-          company: "NEWONE Consultoria - São Paulo - Brasil",
-          period: "Janeiro 2018 - Novembro 2021",
-          description:
-            "Criador e desenvolvedor do sistema de precificação para indústrias, atacadistas e supermercados, chamado Prixsia (https://www.prixsia.com), atualmente líder de mercado. Responsável por planejar e designar recursos do projeto, preparar orçamentos, monitorar o progresso e manter as partes interessadas sempre informadas.",
-        },
-        {
-          title: "GERENTE DE PROJETOS",
-          company: "YANDEH S.A.- São Paulo - Brasil",
-          period: "Março 2014 - Outubro 2017",
-          description:
-            "Líder de Tecnologia e Desenvolvimento da YANDEH, startup inovadora do grupo ITAÚ, um dos maiores bancos do mundo. Responsável pela criação e lançamento de um portal de e-commerce de sucesso para o mercado de materiais de construção, implementando soluções tecnológicas de ponta. Coordenei equipes de desenvolvimento remoto, em parceria com uma software house com mais de 200 profissionais, garantindo entregas eficientes e alta performance no projeto.",
-        },
-        {
-          title: "DESENVOLVEDOR DE JAVA",
-          company: "Baumgart Participacoes S/A (VEDACIT) - São Paulo - Brasil",
-          period: "Janeiro 2012 - Setembro 2014",
-          description:
-            "Desenvolvimento de um sistema em JAVA (SPRING) para gerenciar a equipe de 240 representantes comerciais da Vedacit, uma das principais empresas do setor de materiais de construção no Brasil. O sistema visa otimizar a gestão, acompanhamento e performance dos representantes em todo o território nacional, proporcionando maior eficiência e controle para a equipe e a empresa.",
-        },
-        {
-          title: "DESENVOLVEDOR FULL STACK",
-          company:
-            "AMD ANESTESIA - Sociedade Médica Paulista - São Paulo - Brasil",
-          period: "Janeiro 2007 - Dezembro 2011",
-          description:
-            "Desenvolvimento de um sistema de faturamento para a equipe médica de anestesistas do Hospital Beneficência Portuguesa, o maior hospital da América Latina. O sistema inclui integração de dados com seguradoras e a geração de relatórios de faturamento, garantindo conformidade e precisão para a apresentação aos órgãos de supervisão fiscal do governo.",
-        },
-        {
-          title: "DESENVOLVEDOR MICROSOFT VB VBA",
-          company: "DIARIO DO GRANDE ABC",
-          period: "Janeiro 2001 - Dezembro 2006",
-          description:
-            "Desenvolvimento de um sistema avançado de análise de dados e geração de relatórios gerenciais, projetado para transformar informações complexas em insights estratégicos valiosos. Com integração perfeita aos sistemas de gestão existentes, o sistema proporciona uma visão 360° do desempenho da empresa, permitindo uma tomada de decisão mais rápida, assertiva e alinhada aos objetivos organizacionais.",
-        },
-      ];
+      <div id="collapsible-list" class="min-w-full"></div>
+    </section>
 
-      const softSkills = [
-        {
-          title: "🗣️ Habilidades de Comunicação",
-          items: [
-            "🌏 Comunicação intercultural e colaboração em equipes diversas",
-            "👂 Escuta ativa e feedback construtivo (Team Leader experience)",
-            "✍️ Escrita clara e objetiva para documentação técnica e relatórios",
-            "🎤 Storytelling e apresentações públicas eficazes",
-            "💡 Empatia e capacidade de adaptação a diferentes perfis",
-          ],
-        },
-        {
-          title: "📋 Habilidades Organizacionais e de Gestão",
-          items: [
-            "🏆 Liderança de equipe (10 pessoas atualmente)",
-            "🛠️ Resolução de problemas e gestão de conflitos sob pressão",
-            "🗓️ Planejamento, definição de prioridades e tomada de decisões",
-            "⏱️ Gerenciamento de tempo e aumento de produtividade",
-            "🤝 Trabalho em equipe e delegação efetiva",
-            "💬 Comunicação clara e alinhamento de objetivos",
-          ],
-        },
-        {
-          title: "💡 Habilidades Técnicas Cognitivas",
-          items: [
-            "🧩 Resolução de problemas complexos e debug de sistemas",
-            "🔍 Pensamento analítico e abordagem estruturada para tarefas técnicas",
-            "⚡ Adaptabilidade a novas tecnologias e frameworks rapidamente",
-            "📝 Planejamento e implementação de soluções escaláveis",
-            "🤔 Capacidade de tomar decisões técnicas sob pressão",
-            "🔄 Aprendizado contínuo e melhoria de processos",
-            "🛠️ Aplicação de metodologias ágeis para gestão de tarefas técnicas",
-          ],
-        },
-      ];
-      
-      // Função para criar o conteúdo da lista
-      function createCollapsibleList() {
-        const listContainer = document.getElementById("collapsible-list");
+    <!-- idiomas premium com CDN de bandeiras -->
+    <section class="max-w-6xl mx-auto mt-4 p-4 bg-white">
+      <h2 class="text-2xl font-semibold mb-4 text-gray-400">{ Idiomas }</h2>
+      <div class="space-y-6">
 
-        softSkills.forEach((sSkill) => {
-          // Botão principal do colapsável
-          const button = document.createElement("button");
-          button.classList.add(
-            "collapsible",
-            "w-full",
-            "text-left",
-            "bg-gray-200",
-            "text-gray-800",
-            "p-4",
-            "font-medium",
-            "rounded-lg",
-            "focus:outline-none",
-            "mt-2",
-            "hover:bg-gray-300",
-            "transition-colors",
-            "duration-200"
+        <!-- Italiano -->
+        <div class="flex items-center space-x-4">
+          <img src="https://flagcdn.com/w20/it.png" alt="Italiano" class="w-8 h-5 rounded-sm shadow-sm" />
+          <div class="flex-1">
+            <div class="flex justify-between mb-1">
+              <span class="font-medium text-gray-900">Italiano</span>
+              <span class="text-sm text-gray-600" title="Leitura, escrita e conversação avançadas">Lingua Nativa Fluente</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3">
+              <div class="bg-green-500 h-3 rounded-full w-100% transition-all duration-700"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portugues -->
+        <div class="flex items-center space-x-4">
+          <img src="https://flagcdn.com/w20/br.png" alt="Italiano" class="w-8 h-5 rounded-sm shadow-sm" />
+          <div class="flex-1">
+            <div class="flex justify-between mb-1">
+              <span class="font-medium text-gray-900">Português</span>
+              <span class="text-sm text-gray-600" title="Leitura, escrita e conversação avançadas">Fluente</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3">
+              <div class="bg-green-500 h-3 rounded-full w-100% transition-all duration-700"></div>
+            </div>
+          </div>
+        </div>
+
+        
+        <!-- Inglês -->
+        <div class="flex items-center space-x-4">
+          <img src="https://flagcdn.com/w20/gb.png" alt="Inglês" class="w-8 h-5 rounded-sm shadow-sm" />
+          <div class="flex-1">
+            <div class="flex justify-between mb-1">
+              <span class="font-medium text-gray-900">Inglês</span>
+              <span class="text-sm text-gray-600"
+                title="Uso profissional e técnico em projetos internacionais">Profissional - Leitura, escrita e conversação avançadas</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3">
+              <div class="bg-green-500 h-3 rounded-full w-100% transition-all duration-700"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alemão -->
+        <div class="flex items-center space-x-4">
+          <img src="https://flagcdn.com/w20/de.png" alt="Alemão" class="w-8 h-5 rounded-sm shadow-sm" />
+          <div class="flex-1">
+            <div class="flex justify-between mb-1">
+              <span class="font-medium text-gray-900">Alemão</span>
+              <span class="text-sm text-gray-600" title="Leitura técnica e comunicação básica">Intermediário - Leitura técnica e comunicação básica</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3">
+              <div class="bg-yellow-400 h-3 rounded-full w-60% transition-all duration-700"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Francês -->
+        <div class="flex items-center space-x-4">
+          <img src="https://flagcdn.com/w20/fr.png" alt="Francês" class="w-8 h-5 rounded-sm shadow-sm" />
+          <div class="flex-1">
+            <div class="flex justify-between mb-1">
+              <span class="font-medium text-gray-900">Francês</span>
+              <span class="text-sm text-gray-600" title="Leitura e conversação básicas">Intermediário - Leitura técnica e comunicação básica</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3">
+              <div class="bg-yellow-400 h-3 rounded-full w-50% transition-all duration-700"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- Download Button -->
+    <div class="text-center mt-10"></div>
+  </div>
+
+  <script>
+    // Dados dinâmicos para Educação
+    const educationData = [
+      {
+        title: "CURSO AVANÇADO DE PROGRAMAÇÃO JAVA",
+        company: "Caelum Escola de Tecnologia - BRASIL",
+        period: "Março 2012 - Dezembro 2013",
+        description:
+          "Kit de Desenvolvimento Java (JDK): Máquina Virtual Java (JVM).Programação orientada a objetos com linguagem Java./nCriação de interfaces gráficas de usuário (GUIs), entrada/saída de arquivos e segmentos e operações de rede./nDesenvolvimento de uma aplicação em Java.",
+      },
+      {
+        title: "MESTRADO EM TEORIA DA COMUNICAÇÃO - ALUMNI CONVIDADO",
+        company:
+          "ESCOLA DE COMUNICAÇÕES E ARTES - UNIVERSIDADE DE SÃO PAULO - BRASIL",
+        period: "Janeiro 2009- Junho 2011",
+        description:
+          "epistemologia da comunicação.Teorias da comunicação, estudo da tele ficção (telenovelas, séries);educomunicação (comunicação e educação)comunicação Organizacional;estudos sobre recepção e consumo;jornalismo digital, teoria do jornalismo e diálogo social;comunicação e trabalho;censura e liberdade de expressão;comunicação e cultura.",
+      },
+      {
+        title: "MBA EXECUTIVO EM MARKETING",
+        company: "Escola Superior de Propaganda e Marketing - ESPM",
+        period: "Janeiro 2004 - Junho 2007",
+        description:
+          "Formação em estratégias de marketing, gestão de marcas, comportamento do consumidor e inteligência de mercado, com foco em tomada de decisões, inovação e comunicação integrada.",
+      },
+      {
+        title: "Pós-Graduação em Economia Empresarial CEAG",
+        company:
+          "FUNDAÇÃO GETULIO VARGAS - ESCOLA DE ADMINISTRAÇÃO DO ESTADO DE SÃO PAULO - FGV/ EAESP",
+        period: "Janeiro 2001 - Dezembro 2003",
+        description:
+          "Formação em economia aplicada aos negócios, com foco em modelos econômicos, gestão estratégica e análise financeira, pela FGV EAESP.",
+      },
+      {
+        title:
+          "Licenciatura em Ciências da Comunicação - Publicidade e Propaganda",
+        company: "FUNDAÇÃO ARMANDO ÁLVARES PENTEADO - FAAP - BRASIL",
+        period: "Janeiro 1996 - Dezembro 2000",
+        description:
+          "analisar ambientes de negócios, comportamento do consumidor, bem como segmentar e posicionar produtos e serviços no mercado.Implementar estratégias de marketing, monitorar e avaliar resultados, respeitando os aspectos éticos e legais e incorporando sempre uma visão criativa e inovadora desde o planejamento da campanha até a criação da peça e definição da mídia.Desenvolver conteúdo para produtores independentes e agências de publicidade.Produção executiva, direitos autorais, leis de incentivo e indústria audiovisual.",
+      },
+    ];
+
+    // Dados dinâmicos para Atividades
+    const activitiesData = [
+      {
+        title: "ENGENHEIRO DE SOFTWARE E GERENTE DE PROJETOS",
+        company: "BRBB - Gestora de fundos para o mercado secundario.",
+        period: "Novembro 2024 - Presente",
+        description:
+          "Criador e desenvolvedor de um sistema de precificação para aquisição de cotas de consórcio, além de um sistema de análise baseado em redes neurais para identificar padrões da concorrência, com o objetivo de aumentar a assertividade na participação em leilões de compras de ativos.",
+      },
+      {
+        title: "ENGENHEIRO DE SOFTWARE E GERENTE DE PROJETOS",
+        company: "MAREL SRL Roma - Lacio - Italia",
+        period: "Janeiro 2021 - Março 2023",
+        description:
+          "Criador e desenvolvedor de um sistema de frente de caixa para supermercados e varejo em geral, com responsabilidades de planejar e designar recursos do projeto, preparar orçamentos, monitorar o progresso e manter as partes interessadas sempre informadas..",
+      },
+      {
+        title: "ENGENHEIRO DE SOFTWARE E GERENTE DE PROJETOS",
+        company: "NEWONE Consultoria - São Paulo - Brasil",
+        period: "Janeiro 2018 - Novembro 2021",
+        description:
+          "Criador e desenvolvedor do sistema de precificação para indústrias, atacadistas e supermercados, chamado Prixsia (https://www.prixsia.com), atualmente líder de mercado. Responsável por planejar e designar recursos do projeto, preparar orçamentos, monitorar o progresso e manter as partes interessadas sempre informadas.",
+      },
+      {
+        title: "GERENTE DE PROJETOS",
+        company: "YANDEH S.A.- São Paulo - Brasil",
+        period: "Março 2014 - Outubro 2017",
+        description:
+          "Líder de Tecnologia e Desenvolvimento da YANDEH, startup inovadora do grupo ITAÚ, um dos maiores bancos do mundo. Responsável pela criação e lançamento de um portal de e-commerce de sucesso para o mercado de materiais de construção, implementando soluções tecnológicas de ponta. Coordenei equipes de desenvolvimento remoto, em parceria com uma software house com mais de 200 profissionais, garantindo entregas eficientes e alta performance no projeto.",
+      },
+      {
+        title: "DESENVOLVEDOR DE JAVA",
+        company: "Baumgart Participacoes S/A (VEDACIT) - São Paulo - Brasil",
+        period: "Janeiro 2012 - Setembro 2014",
+        description:
+          "Desenvolvimento de um sistema em JAVA (SPRING) para gerenciar a equipe de 240 representantes comerciais da Vedacit, uma das principais empresas do setor de materiais de construção no Brasil. O sistema visa otimizar a gestão, acompanhamento e performance dos representantes em todo o território nacional, proporcionando maior eficiência e controle para a equipe e a empresa.",
+      },
+      {
+        title: "DESENVOLVEDOR FULL STACK",
+        company:
+          "AMD ANESTESIA - Sociedade Médica Paulista - São Paulo - Brasil",
+        period: "Janeiro 2007 - Dezembro 2011",
+        description:
+          "Desenvolvimento de um sistema de faturamento para a equipe médica de anestesistas do Hospital Beneficência Portuguesa, o maior hospital da América Latina. O sistema inclui integração de dados com seguradoras e a geração de relatórios de faturamento, garantindo conformidade e precisão para a apresentação aos órgãos de supervisão fiscal do governo.",
+      },
+      {
+        title: "DESENVOLVEDOR MICROSOFT VB VBA",
+        company: "DIARIO DO GRANDE ABC",
+        period: "Janeiro 2001 - Dezembro 2006",
+        description:
+          "Desenvolvimento de um sistema avançado de análise de dados e geração de relatórios gerenciais, projetado para transformar informações complexas em insights estratégicos valiosos. Com integração perfeita aos sistemas de gestão existentes, o sistema proporciona uma visão 360° do desempenho da empresa, permitindo uma tomada de decisão mais rápida, assertiva e alinhada aos objetivos organizacionais.",
+      },
+    ];
+
+    const softSkills = [
+      {
+        title: "🗣️ Habilidades de Comunicação",
+        items: [
+          "🌏 Comunicação intercultural e colaboração em equipes diversas",
+          "👂 Escuta ativa e feedback construtivo (Team Leader experience)",
+          "✍️ Escrita clara e objetiva para documentação técnica e relatórios",
+          "🎤 Storytelling e apresentações públicas eficazes",
+          "💡 Empatia e capacidade de adaptação a diferentes perfis",
+        ],
+      },
+      {
+        title: "📋 Habilidades Organizacionais e de Gestão",
+        items: [
+          "🏆 Liderança de equipe (10 pessoas atualmente)",
+          "🛠️ Resolução de problemas e gestão de conflitos sob pressão",
+          "🗓️ Planejamento, definição de prioridades e tomada de decisões",
+          "⏱️ Gerenciamento de tempo e aumento de produtividade",
+          "🤝 Trabalho em equipe e delegação efetiva",
+          "💬 Comunicação clara e alinhamento de objetivos",
+        ],
+      },
+      {
+        title: "💡 Habilidades Técnicas Cognitivas",
+        items: [
+          "🧩 Resolução de problemas complexos e debug de sistemas",
+          "🔍 Pensamento analítico e abordagem estruturada para tarefas técnicas",
+          "⚡ Adaptabilidade a novas tecnologias e frameworks rapidamente",
+          "📝 Planejamento e implementação de soluções escaláveis",
+          "🤔 Capacidade de tomar decisões técnicas sob pressão",
+          "🔄 Aprendizado contínuo e melhoria de processos",
+          "🛠️ Aplicação de metodologias ágeis para gestão de tarefas técnicas",
+        ],
+      },
+    ];
+
+    // Função para criar o conteúdo da lista
+    function createCollapsibleList() {
+      const listContainer = document.getElementById("collapsible-list");
+
+      softSkills.forEach((sSkill) => {
+        // Botão principal do colapsável
+        const button = document.createElement("button");
+        button.classList.add(
+          "collapsible",
+          "w-full",
+          "text-left",
+          "bg-gray-200",
+          "text-gray-800",
+          "p-4",
+          "font-medium",
+          "rounded-lg",
+          "focus:outline-none",
+          "mt-2",
+          "hover:bg-gray-300",
+          "transition-colors",
+          "duration-200"
+        );
+        button.innerText = sSkill.title;
+
+        // Conteúdo do colapsável
+        const content = document.createElement("div");
+        content.classList.add(
+          "content",
+          "pl-6",
+          "pb-4",
+          "bg-gray-50",
+          "hidden"
+        );
+
+        const ul = document.createElement("ul");
+        sSkill.items.forEach((item) => {
+          const li = document.createElement("li");
+          li.classList.add(
+            "mb-2",
+            "text-gray-700",
+            "flex",
+            "items-start",
+            "gap-2"
           );
-          button.innerText = sSkill.title;
-
-          // Conteúdo do colapsável
-          const content = document.createElement("div");
-          content.classList.add(
-            "content",
-            "pl-6",
-            "pb-4",
-            "bg-gray-50",
-            "hidden"
+          // Ícone do item: pega o primeiro emoji
+          const matchEmoji = item.match(
+            /^(\p{Emoji_Presentation}|\p{Emoji}\uFE0F)/u
           );
-
-          const ul = document.createElement("ul");
-          sSkill.items.forEach((item) => {
-            const li = document.createElement("li");
-            li.classList.add(
-              "mb-2",
-              "text-gray-700",
-              "flex",
-              "items-start",
-              "gap-2"
-            );
-            // Ícone do item: pega o primeiro emoji
-            const matchEmoji = item.match(
-              /^(\p{Emoji_Presentation}|\p{Emoji}\uFE0F)/u
-            );
-            const icon = document.createElement("span");
-            icon.classList.add("flex-none");
-            if (matchEmoji) {
-              icon.innerText = matchEmoji[0];
-              li.innerText = item.replace(matchEmoji[0], "").trim();
-              li.prepend(icon);
-            } else {
-              li.innerText = item;
-            }
-            ul.appendChild(li);
-          });
-
-          content.appendChild(ul);
-          listContainer.appendChild(button);
-          listContainer.appendChild(content);
-
-          // Evento para abrir/fechar
-          button.addEventListener("click", () => {
-            button.classList.toggle("bg-gray-300");
-            content.classList.toggle("hidden");
-          });
+          const icon = document.createElement("span");
+          icon.classList.add("flex-none");
+          if (matchEmoji) {
+            icon.innerText = matchEmoji[0];
+            li.innerText = item.replace(matchEmoji[0], "").trim();
+            li.prepend(icon);
+          } else {
+            li.innerText = item;
+          }
+          ul.appendChild(li);
         });
-      }
-      
-      // Chamar a função para criar a lista dinâmica
-      createCollapsibleList();
 
-      // Função para renderizar os itens da timeline
-      function renderTimeline(data, containerId, color, small) {
-        const container = document.getElementById(containerId);
-        data.forEach((item) => {
-          // Determine the class for the last paragraph
-          const descriptionClass = small ? "text-xs" : "text-md leading-loose";
+        content.appendChild(ul);
+        listContainer.appendChild(button);
+        listContainer.appendChild(content);
 
-          const timelineItem = `
+        // Evento para abrir/fechar
+        button.addEventListener("click", () => {
+          button.classList.toggle("bg-gray-300");
+          content.classList.toggle("hidden");
+        });
+      });
+    }
+
+    // Chamar a função para criar a lista dinâmica
+    createCollapsibleList();
+
+    // Função para renderizar os itens da timeline
+    function renderTimeline(data, containerId, color, small) {
+      const container = document.getElementById(containerId);
+      data.forEach((item) => {
+        // Determine the class for the last paragraph
+        const descriptionClass = small ? "text-xs" : "text-md leading-loose";
+
+        const timelineItem = `
                 <div class="mb-10 ml-6">
                     <span class="absolute w-4 h-4 ${color} rounded-full -left-2"></span>
                     <h3 class="text-xl font-semibold">${item.title}</h3>
@@ -476,28 +549,27 @@
                     <p class="text-gray-600 ${descriptionClass}">${item.description}</p>
                 </div>
                 `;
-          container.innerHTML += timelineItem;
-        });
-      }
+        container.innerHTML += timelineItem;
+      });
+    }
 
-      function populateCV(data) {
-        document.getElementById("name").textContent = data.name;
-        document.getElementById("title").textContent = data.title;
-      }
+    function populateCV(data) {
+      document.getElementById("name").textContent = data.name;
+      document.getElementById("title").textContent = data.title;
+    }
 
-     
+    //populateCV(content);
+    // Renderizando as timelines dinamicamente
+    renderTimeline(educationData, "educationTimeline", "bg-blue-500", true);
+    renderTimeline(
+      activitiesData,
+      "activitiesTimeline",
+      "bg-green-500",
+      true
+    );
+  </script>
+  <script src="skills-component.js"></script>
+  <script src="timeline-component.js"></script>
+</body>
 
-      //populateCV(content);
-      // Renderizando as timelines dinamicamente
-      renderTimeline(educationData, "educationTimeline", "bg-blue-500", true);
-      renderTimeline(
-        activitiesData,
-        "activitiesTimeline",
-        "bg-green-500",
-        true
-      );
-    </script>
-    <script src="skills-component.js"></script>
-    <script src="timeline-component.js"></script>
-  </body>
 </html>
